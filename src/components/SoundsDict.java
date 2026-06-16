@@ -21,7 +21,7 @@ public class SoundsDict {
         sounds.put("J", "src/sounds/downer_noise.wav");
         sounds.put("K", "src/sounds/dry-fart.wav");
         sounds.put("L", "src/sounds/dun-dun-dun-sound-effect-brass_8nFBccR.wav");
-        sounds.put("M", "src/sounds/error_CDOxCYm.wav");
+        sounds.put("Enter", "src/sounds/error_CDOxCYm.wav");
         sounds.put("N", "src/sounds/fortnite-death.wav");
         sounds.put("O", "src/sounds/heavenly-music-gaming-sound-effect-hd-mp3cut.wav");
         sounds.put("P", "src/sounds/i-dont-care-that-you-broke-your-elbow.wav");
@@ -43,7 +43,7 @@ public class SoundsDict {
         sounds.put("7", "src/sounds/the-very-best-of-willem-dafoes-green-goblin.wav");
         sounds.put("8", "src/sounds/vine-boom.wav");
         sounds.put("9", "src/sounds/yeah-boiii-i-i-i.wav");
-        sounds.put("y", "src/sounds/yippeeeeeeeeeeeeee.wav");
+        sounds.put("M", "src/sounds/yippeeeeeeeeeeeeee.wav");
     }
 
     public String getSound(String key) {

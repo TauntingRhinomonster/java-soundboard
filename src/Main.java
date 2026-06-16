@@ -13,13 +13,6 @@ import components.SoundsDict;
 
 public class Main implements NativeKeyListener {
     public static void main(String[] args) {
-        String name = "Ryan";
-        int year = 2003, month = 02, day = 18;
-        System.out.println("Hello " + name);
-        System.out.println("Your Birthday is: %d/%d/%d".formatted(month, day, year));
-        System.out.println();
-
-
         try {
             GlobalScreen.registerNativeHook();
         } catch (NativeHookException e) {

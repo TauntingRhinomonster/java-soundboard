@@ -6,7 +6,7 @@ Have you wanted to have a simple soundboard on your computer that could run when
 
 Steps to build and/or run the software:
 
-1. Run the following on your computer: `notepad $profile`
+1. Run the following in your shell: `notepad $profile` (in order for this to work, you need to be able to have shortcuts allowed in your shell. You can have an AI help you set that up!)
 2. Enter this into the notepad: `function soundboard { cd [INSERT YOUR PATH TO THE PROJECT HERE]; javac -cp "lib/jnativehook-2.2.2.jar;src" src/Main.java; java -cp "lib/jnativehook-2.2.2.jar;src" Main }`
 3. Open up Windows Powershell, and type `soundboard`
 
@@ -25,14 +25,13 @@ Instructions for using the software:
 To recreate the development environment, you need the following software and/or libraries with the specified versions:
 
 * You need some kind of Shell to run the code in. All computers have one. You just need to find yours.
-* You need a Java complier. You can find one here: `https://www.oracle.com/java/technologies/downloads/`
+* You need a Java complier. You can find one here: [Oracle JDK Downloads](https://www.oracle.com/java/technologies/downloads/)
 * I clicked on the Windows tab and selected the x64 Installer. After that I restarted my laptop.
 
 ## Useful Websites to Learn More
 
 I found these websites useful in developing this software:
 
-* [Oracle JDK Downloads](https://www.oracle.com/java/technologies/downloads/#java17-windows)
 * [w3schools "Java" documentation](https://www.w3schools.com/java/default.asp)
 * [GitHub Java Native Hook documentation](https://github.com/kwhat/jnativehook) 
 * [Google Gemini](https://gemini.google.com/u/1/app) 
@@ -50,12 +49,12 @@ The following items I plan to fix, improve, and/or add to this project in the fu
 
 What do you need to learn to understand how to recreate this?
 
-1. [X] Print text and use variables
-2. [X] Write methods
-3. [X] Create simple classes
-4. [X] Use ArrayList and HashMap
-5. [X] Read files from folders
-6. [X] Use try/catch
-7. [X] React to a button click or key press
-8. [X] Play one WAV file
-9. [X]  Combine key presses + sound files
+1. Print text and use variables
+2. Write methods
+3. Create simple classes
+4. Use ArrayList and HashMap
+5. Read files from folders
+6. Use try/catch
+7. React to a button click or key press
+8. Play one WAV file
+9.  Combine key presses + sound files

@@ -6,17 +6,19 @@ Have you wanted to have a simple soundboard on your computer that could run when
 
 Steps to build and/or run the software:
 
-1. 
-2.
-3.
+1. Run the following on your computer: `notepad $profile`
+2. Enter this into the notepad: `function soundboard { cd [INSERT YOUR PATH TO THE PROJECT HERE]; javac -cp "lib/jnativehook-2.2.2.jar;src" src/Main.java; java -cp "lib/jnativehook-2.2.2.jar;src" Main }`
+3. Open up Windows Powershell, and type `soundboard`
 
 Instructions for using the software:
 
-1. Run the following on your computer: `notepad $profile`
-2. Enter this into the notepad: `function soundboard { javac -cp "lib/jnativehook-2.2.2.jar;src" src/Main.java; java -cp "lib/jnativehook-2.2.2.jar;src" Main }`
-3. Open up Windows Powershell, and type `soundboard`
-4. Press any key and listen to the sound
-5. To quit, press *CTRL + C*
+1. Open the soundboard program using my tutorial for building it above ☝🏻
+2. Press any key to play a sound
+3. For the menu press `Escape`
+4. When in the menu, press 1 for inserting a new sound, and 2 for swaping keys (swapping is under development).
+5. When inserting a new sound key, enter values like: 'A', 'B', 'Escape', 'Space', 'Tab', '1', '0', etc
+6. When inserting a new sound path, enter only .wav files with the path: `src/sounds/[INSERT PATH].wav`
+7. To quit, press *CTRL + C*
 
 ## Development Environment
 
@@ -39,21 +41,21 @@ I found these websites useful in developing this software:
 
 The following items I plan to fix, improve, and/or add to this project in the future:
 
+* [X] Allow user to add more sounds
+* [ ] Allow the user to edit the sounds dictionary by swapping keys
+* [ ] Allow the user to delete sounds from the dictionary
 * [ ] Add a random sound button
-* [ ] Allow the user to edit the sounds dictionary to add their own sound files
-* [ ] Add more sounds
 
 ## Learning Order of Operations
 
-What do you need to learn to understand how to do this?
+What do you need to learn to understand how to recreate this?
 
 1. [X] Print text and use variables
 2. [X] Write methods
 3. [X] Create simple classes
-4. [ ] Use ArrayList and HashMap
-5. [ ] Read files from folders
-6. [ ] Use try/catch
-7. [ ] Make a simple Swing window
-8. [ ] React to a button click or key press
-9. [ ] Play one WAV file
-10.[ ]  Combine key presses + sound files
+4. [X] Use ArrayList and HashMap
+5. [X] Read files from folders
+6. [X] Use try/catch
+7. [X] React to a button click or key press
+8. [X] Play one WAV file
+9. [X]  Combine key presses + sound files

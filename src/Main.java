@@ -1,18 +1,26 @@
-
 // These are what AI gave me to download so that I could run the program globally
 import com.github.kwhat.jnativehook.GlobalScreen;
 import com.github.kwhat.jnativehook.NativeHookException;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyListener;
+import java.io.File;
+
+import java.util.HashMap;
 
 // These imports are for getting the sounds to be played.
 import javax.sound.sampled.*;
-import java.io.File;
 
+import components.Menu;
+// These are my PERSONAL imports.
 import components.SoundsDict;
 
 public class Main implements NativeKeyListener {
+    private static HashMap<String, String> sounds;
+
+    // THIS IS THE MAIN WHERE STUFF ACTUALLY HAPPENS
     public static void main(String[] args) {
+        sounds = SoundsDict.getAllSounds();
+
         try {
             GlobalScreen.registerNativeHook();
         } catch (NativeHookException e) {
@@ -20,9 +28,6 @@ public class Main implements NativeKeyListener {
         }
         
         GlobalScreen.addNativeKeyListener(new Main());
-
-
-
 
     }
 
@@ -38,8 +43,11 @@ public class Main implements NativeKeyListener {
     }
     // This class builds upon the returnKeyPress method
     public String displaySoundUrl(String key) {
-        SoundsDict sounds = new SoundsDict();
-        String url = sounds.getSound(key);
+        if (key.equals("Escape")) {
+            Menu menu = new Menu();
+            menu.menu();
+        }
+        String url = sounds.get(key);
         return url;
     }
     // Finally, play the sound so that the user can hear it.
@@ -67,7 +75,6 @@ public class Main implements NativeKeyListener {
             e.printStackTrace();
         }
     }
-    
 
     @Override
     public void nativeKeyReleased(NativeKeyEvent e) {
